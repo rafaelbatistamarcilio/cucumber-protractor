@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cucumber protractor</title>
+
+</head>
+
+<body>
+    <main ng-app="app">
+
+        <div id="container" ng-controller="MainController as vm">
+            <input type="text" id="inp-nome-planeta" ng-model="vm.planeta">
+            <button id="btn-pesquisar" ng-click="vm.pesquisar()"> Pesquisar </button>
+
+            <div id="planetas-lista">
+                <h3 ng-repeat="planeta in vm.planetas">{{ planeta.name }}</h3>
+            </div>
+        </div>
+
+    </main>
+    <script src="lib/angular.mim.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/main.controller.js"></script>
+</body>
+
+</html>

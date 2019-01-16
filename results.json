@@ -1,0 +1,85 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Busca de planetas do star wars",
+    "line": 2,
+    "id": "busca-de-planetas-do-star-wars",
+    "tags": [],
+    "uri": "features\\main.feature",
+    "elements": [
+      {
+        "id": "busca-de-planetas-do-star-wars;pesquisa-de-planetas-do-universo-star-wars-pelo-nome",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Pesquisa de planetas do universo Star Wars pelo nome",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que o usuario esta na tela de pesquisa de planetas",
+            "match": {
+              "location": "tests\\steps\\main.step.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 736000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "o usuário digita \"alde\" no campo de pesquisa",
+            "match": {
+              "location": "tests\\steps\\main.step.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "o sistema deve exibir \"1\" planeta na lista de planetas",
+            "match": {
+              "location": "tests\\steps\\main.step.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7000000,
+              "error_message": "TypeError: lista.map is not a function\n    at MainPO.recuperarPlanetas (C:\\dsv\\qa\\cucumber-protractor\\tests\\po\\main.po.js:36:32)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "o nome do planeta deve ser \"Aldeebaran\"",
+            "match": {
+              "location": "tests\\steps\\main.step.js:19"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
